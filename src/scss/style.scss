@@ -1,0 +1,19 @@
+@import './variables';
+
+@import './globals';
+@import './reset';
+@import '../components/Header/style';
+@import '../components/Sidebar/style';
+@import '../components/HomeBanner/style';
+@import '../components/ContractPage/style';
+@import '../components/Login/style';
+@import '../components/Register/style';
+@import '../components/ContractAdd/style';
+@import '../components/ContractDetails/style';
+@import '../../node_modules/modern-toastr/dist/modern-toastr.css';
+
+
+
+body {
+    margin: 0;
+}

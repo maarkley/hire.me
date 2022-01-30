@@ -1,0 +1,80 @@
+.loginWrapper {
+    width: 500px;
+    margin: 15vh auto;
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 45px #ddd; 
+    .formGroup {
+        width: 100%;
+        position: relative;
+        margin-bottom: 25px;
+        border: 1px solid #e2e2e2;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: $white;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            // background-color: #e2e2e2;
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset;
+        }
+        input[type="password"] {
+            background-color: transparent;
+            border: none;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        label {
+            position: absolute;
+            left: 5px;
+            bottom: 3px;
+            color: #aaa;
+            font-weight: 300;
+            font-size: 13px;
+            transition: 0.2s;
+        }
+    }
+    input[type="submit"] {
+            border: none;
+            background-color: $theme;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            display: block;
+            margin: 60px auto 0;
+            box-shadow: 0 0 4px #aaa;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            &:hover {
+                color: $theme;
+                background-color: $white;
+            }
+        }
+}

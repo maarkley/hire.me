@@ -1,0 +1,37 @@
+.contract-details {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    .main {
+        flex: 0 0 800px;
+        .upper {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e6e6e6;
+            .contract-title {
+                font-weight: 400;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .desc {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.4;
+            }    
+        }
+        .lower {
+            display: flex;
+            justify-content: flex-end;
+            .icon {
+                width: 28px;
+                height: 28px;
+                margin-right: 25px;
+            }
+        }
+        
+    }  
+    .side-box {
+        flex: 0 0 300px;
+        margin-left: 45px;
+    }
+}

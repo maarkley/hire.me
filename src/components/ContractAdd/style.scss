@@ -1,0 +1,87 @@
+.form-wrapper {
+    position: relative;
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+    form {
+        flex: 0 0 600px;
+        box-sizing: border-box;
+        padding: 45px;
+        background-color: $white;
+        box-shadow: 0 0 5px #ccc;
+        .form-title {
+            font-size: 20px;
+            margin: 0 0 45px;
+            font-weight: 400;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .validation-info {
+                position: absolute;
+                left: -25px;
+                bottom: 15px;
+                width: 10px;
+                height: 10px;
+                background-color: rgba(red, 0.4);
+                border-radius: 50%;
+                color: #444;
+                .info {
+                    position: absolute;
+                    left:0; 
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 10px 15px;
+                    background-color: rgba(red, 0.2);
+                    color: red;
+                    transition: 0.2s ease-in-out;
+                }
+                &.active {
+                    .info {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            label {
+                margin-right: 15px;
+                margin-bottom: 10px;
+                color: $txtColor;
+                font-size: 15px;
+                display: block;
+                flex: 0 0 100%;
+            }
+            select {
+                display: block;
+                padding: 10px;
+                border: 1px solid transparent;                
+                background-color: #f9f9f9;
+                box-sizing: border-box;
+                width: 320px;
+            }
+            input {
+                flex: 1 0 100%;
+                border: 1px solid transparent;
+                padding: 10px 15px;
+                box-sizing: border-box;
+                background-color: #f9f9f9;
+            }
+            textarea {
+                flex: 1 0 100%;
+                border: 1px solid transparent;                
+                padding: 10px 15px;
+                box-sizing: border-box;
+                resize: none;
+                height: 160px;
+                max-width: 100%;                
+                background-color: #f9f9f9;
+            }
+        }
+    }
+}
